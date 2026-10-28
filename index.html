@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <main class="calculadora">
+    <h1>Calculadora</h1>
+
+    <!-- Campos de entrada -->
+    <div class="campos">
+      <label>
+        Primeiro número
+        <input type="number" id="numero1" placeholder="Ex.: 5" />
+      </label>
+      <label>
+        Segundo número
+        <input type="number" id="numero2" placeholder="Ex.: 3" />
+      </label>
+    </div>
+
+    <!-- Seleção da operação -->
+    <fieldset class="operacoes">
+      <legend>Operação</legend>
+      <label><input type="radio" name="operacao" value="soma" checked /> Soma</label>
+      <label><input type="radio" name="operacao" value="subtracao" /> Subtração</label>
+      <label><input type="radio" name="operacao" value="produto" /> Produto</label>
+      <label><input type="radio" name="operacao" value="divisao" /> Divisão</label>
+      <label><input type="radio" name="operacao" value="fatorial" /> Fatorial (1º número)</label>
+    </fieldset>
+
+    <button id="calcular">Calcular</button>
+
+    <p class="resultado">Resultado: <span id="resultado">-</span></p>
+  </main>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff8fc7, #ffc2e2 50%, #ff6fb5);
+  color: #5a1740;
+}
+
+.calculadora {
+  width: 380px;
+  padding: 28px;
+  background: #fff0f7;
+  border: 3px solid #ff4fa3;
+  border-radius: 28px;
+  box-shadow: 0 12px 40px rgba(214, 0, 110, 0.35);
+}
+
+h1 {
+  margin: 0 0 24px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e0207f;
+}
+
+.campos {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.campos label {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #c2185b;
+}
+
+.campos input {
+  width: 100%;
+  min-width: 0;
+  margin-top: 6px;
+  padding: 12px;
+  border: none;
+  border-bottom: 3px solid #ff4fa3;
+  border-radius: 10px 10px 0 0;
+  background: #ffd9ec;
+  color: #5a1740;
+  font-size: 18px;
+  outline: none;
+}
+
+.campos input:focus {
+  background: #ffc2e2;
+  border-bottom-color: #e0207f;
+}
+
+.campos input::placeholder {
+  color: #e58bbb;
+}
+
+/* Operações em lista vertical */
+.operacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 22px;
+  padding: 14px 16px;
+  border: 2px dashed #ff4fa3;
+  border-radius: 16px;
+  background: #ffe6f2;
+}
+
+.operacoes legend {
+  padding: 0 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #c2185b;
+}
+
+.operacoes label {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.operacoes label:hover {
+  color: #e0207f;
+}
+
+.operacoes input {
+  accent-color: #e0207f;
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff4fa3, #ff8fc7);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(224, 32, 127, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.resultado {
+  margin: 22px 0 0;
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+  color: #c2185b;
+  background: #ffd9ec;
+  border: 2px solid #ff8fc7;
+  border-radius: 14px;
+}
+
+#resultado {
+  display: block;
+  margin-top: 4px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e0207f;
+}
